@@ -1,0 +1,98 @@
+Git Bash Commands for Git:
+
+To create git local repo:
+git init . 
+
+To add files from working area to staging area:
+git add <filename>
+for multiple files to be added:
+git add .
+or
+git add --all
+
+To commit staging area files to local repo:
+git commit -m "<tag>"
+
+TO check status of the files in git to know which area it belongs:
+git status
+
+To check the committed files to local repo:
+git log
+
+To note last commit number:
+note commit's first five numbers using command, git log
+
+To create new remote repository in GitHub:
+Sign in to https://github.com/ and create new repository
+
+To clone the remote repo to local repo:
+copy the clone URL from https://github.com/ and use below command:
+git clone <remoterepoURL>
+
+To push the committed files/changes from origin to master repo:
+git push origin master
+
+To find the differences(comparison):
+git diff <filename>
+
+git diff <headcommitnumber> <head-1commitnumber>
+
+git diff head head~1
+
+git diff head~1 head~2
+(use tilde sign)
+
+To pull the differences from remote master to origin:
+git pull <remoterepoURL>
+
+To check what changes have been committed:
+git show <commitID>
+
+or 
+
+git show Head
+
+git show head~1
+
+To know who has committed what changes:
+git annotate <filename>
+
+To go back to previous specific commitID:
+git checkout <commitID>
+
+To remove file from git:
+git rm <filename>
+
+
+To go back to recent commit head:
+git switch -
+
+git branches:
+To check branches:
+git branches
+
+To create new branch:
+git branch <branchname>
+
+to switch to another branch:
+git checkout <branchname>
+
+to switch on to master branch:
+git checkout master
+
+to push changes from another branch:
+git push origin <branchname>
+
+to merge changes from another branch to master:
+git merge <branchname>
+
+to commit merged changes to master (checkout to master):
+git push origin master
+
+
+to create a new branch and switch to it:
+git checkout -b <branchname>
+
+
+
+
